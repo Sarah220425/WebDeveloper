@@ -1,4 +1,4 @@
-## Welcome to GitHub Pages
+## Welcome to my GitHub Pages
 
 This assignment can be seen in the repository 'WebDeveloper'-'module2-solution'.
 The index.html is the html file.

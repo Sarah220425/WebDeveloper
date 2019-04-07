@@ -1,5 +1,5 @@
 ## Welcome to my GitHub Pages
 
-This assignment can be seen in the repository 'WebDeveloper'-'module2-solution'.
+Please see this assignment on the following link: https://github.com/Sarah220425/WebDeveloper/tree/master/module2-solution
 The index.html is the html file.
 The external.css contains all the styles.

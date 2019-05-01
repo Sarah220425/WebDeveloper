@@ -1,1 +1,1 @@
-
+Bootstrap.js is based on the jquery.js so the jquery.js should be imported first.

@@ -8,6 +8,7 @@ Bootstrap.js is based on the jquery.js so the jquery.js should be imported first
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Dropdown</title>
     ```diff
+    ！！！！！Important
     +<script src="jquery-3.4.0.min.js"></script>
     +<script src="js/bootstrap.min.js"></script>  
     +<link rel="stylesheet" type="text/css" href="css/bootstrap.css"/>

@@ -1,0 +1,58 @@
+Javascript Types:
+A type is a particular data structure.
+7 built-in types:
+
+1 Object Type: Object is a collection of name/value pairs.
+
+6 Primitive Tupes: Primitive type represents a single, immutable value. (Once it's set, it can't be changed)
+/1 Boolean: only have 2 values: true or false
+/2 Undefined: no value has ever been set
+/3 Null: signifies lack of value
+/4 Number: is the only numeric tyoe in Javascript
+/5 String: sequence of characters used to represent text
+/6 Symbol: new to ES6
+
+
+Common Language Constructs:
+[1] For loop
+var sum = 0;
+for (var i = 0; i < 10; i++) {
+  console.log(i);
+  sum = sum + i;
+}
+console.log("sum of 0 through 9 is: " + sum);
+
+[2] the position of {}
+// ***** Best practice for {} style
+// Curly brace on the same or next line...
+// Is it just a style?
+function a() 
+{
+  return
+  { 
+    name: "Yaakov"
+  };
+}
+
+function b() {
+  return { 
+      name: "Yaakov"
+  };
+}
+console.log(a());
+console.log(b());
+
+
+
+
+Handling default values:
+    
+// Default values
+function orderChickenWith(sideDish) {
+  sideDish = sideDish || "whatever!";
+  console.log("Chicken with " + sideDish);
+}
+
+orderChickenWith("noodles");
+orderChickenWith();
+

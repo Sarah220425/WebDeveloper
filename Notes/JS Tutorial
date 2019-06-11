@@ -1,0 +1,218 @@
+JS Introduction:
+JS can change HTML Contents:
+<button type="button" onclick='document.getElementById("demo").innerHTML = "Hello JavaScript!"'>Click Me!</button>
+
+JS can change HTML Contribute Values:
+<button onclick="document.getElementById('myImage').src='pic_bulbon.gif'">Turn on the light</button>
+<img id="myImage" src="pic_bulboff.gif" style="width:100px">
+<button onclick="document.getElementById('myImage').src='pic_bulboff.gif'">Turn off the light</button>
+
+Objects and Functions in JS
+1. Creating objects using ‘new object()’ syntax
+var company = {
+   ceo : {},
+   "stock of company": 110
+};
+Object literal: write, ; before finished
+
+2. Function explained
+
+
+3. Passing variables by value vs. by reference
+Passing by value: doesn’t affect
+Passing by reference: does affect
+Example:
+// Copy by Reference vs by Value
+var a = 7;
+var b = a;
+console.log("a: " + a);
+console.log("b: " + b);
+
+b = 5;
+console.log("after b update:");
+console.log("a: " + a);
+console.log("b: " + b);
+
+//////////////
+var a = { x: 7 };
+var b = a;
+console.log(a);
+console.log(b);
+
+b.x = 5;
+console.log("after b.x update:");
+console.log(a);
+console.log(b);
+
+Simple rule to remember:
+	Primitives are passed/copied by value
+	Objects are passed/copied by reference
+
+3. function constructors, prototype, and the ‘this’ keyword
+
+
+
+JS Output:
+Using InnerHTML: 
+<script>
+document.getElementById("demo").innerHTML = 5 + 6;
+</script>
+
+Using document.write():
+<script>
+document.write(5 + 6);
+</script>
+
+Using window.alert(): (弹窗)
+<script>
+window.alert(5 + 6);
+</script>
+
+Using console.log():
+<script>
+console.log(5 + 6);
+</script>
+
+JS Statements:
+
+JS Syntax:
+document.getElementById("demo").innerHTML = 10.50;   output: 10.5
+
+JS Comments:
+Any text between // and the end of the line will be ignored by JavaScript (will not be executed).
+/* */
+The assignment Operator: 
+= 
+Equal to: ==
+
+<script>
+var pi = 3.14;
+var person = "John Doe";
+var answer = 'Yes I am!';
+document.getElementById("demo").innerHTML = pi + "<br>" + person + "<br>" + answer;
+</script>
+
+JS Operators:
+x += 5; x=x+5;
+===equal value and equal type
+==equal to
+
+JS Data Types
+Dynamic: 
+var x;           // Now x is undefined
+x = 5;           // Now x is a Number
+x = "John";      // Now x is a String
+
+Arrays:
+<script>
+var cars = ["Saab","Volvo","BMW"];
+document.getElementById("demo").innerHTML = cars[0];
+</script>
+
+查看type：typeof
+
+Objects can be emptied by setting the value to null.
+
+JS Functions:
+<script>
+function myFunction(p1, p2) {
+  return p1 * p2;
+}
+document.getElementById("demo").innerHTML = myFunction(4, 3);
+</script>
+
+JS Events:
+<button onclick="document.getElementById('demo').innerHTML=Date()">The time is?</button>
+换行 <br>
+
+JS Math Object:
+Math.round() 四舍五入取整
+Math.pow() 次方
+Math.sqrt 开根号
+Math.abs return positive value
+Math.ceil(floor) 取顶/底
+
+JS Boolean:
+Represents one of the two values: True/False
+
+JS Loops:
+<script>
+var cars = ["BMW", "Volvo", "Saab", "Ford", "Fiat", "Audi"];
+var text = "";
+var i;
+for (i = 0; i < cars.length; i++) {
+  text += cars[i] + "<br>";
+}
+document.getElementById("demo").innerHTML = text;
+</script>
+
+For/while
+
+JS Break Continue
+<script>
+var text = "";
+var i;
+for (i = 0; i < 10; i++) {
+  if (i === 3) { break; }
+  text += "The number is " + i + "<br>";
+}
+document.getElementById("demo").innerHTML = text;
+</script>
+
+Break list;
+
+JS Type Conversion
+In JavaScript there are 5 different data types that can contain values:
+•	string
+•	number
+•	boolean
+•	object
+•	function
+There are 6 types of objects:
+	Object
+	Date
+	Array
+	String
+	Number
+	Boolean
+
+And 2 data types that cannot contain values:
+	null
+	undefined
+
+Fake namespace:
+Script.js:
+Sarahgreeter.sayhello();
+Johngreeter.sayhi();
+
+Script1.js:
+var Sarahgreeter = {};
+Sarahgreeter.name = "Sarah";
+Sarahgreeter.sayhello = function(){
+	console.log("Hello " + Sarahgreeter.name);
+}
+
+Script2.js:
+var Johngreeter = {};
+Johngreeter.name = "John";
+Johngreeter.sayhi = function() { 
+	console.log("Hi " + Johngreeter.name);
+}
+
+Immediately invoked function expressions (IIFEs)
+(function (window) {
+var Sarahgreeter = {};
+Sarahgreeter.name = "Sarah";
+var greeting = "Hello ";
+Sarahgreeter.sayhello = function(){
+	console.log(greeting + Sarahgreeter.name);
+}
+
+window.Sarahgreeter = Sarahgreeter;
+
+})(window);
+
+
+
+
+
